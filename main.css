@@ -35,7 +35,7 @@ li {
     border-top: 8px solid #CACACA;
     position: relative;
     top: 3px;
-    left: 380px;
+    left: 86%;
 }
 
 .image-footer {
@@ -102,4 +102,78 @@ span {
 .image-caption span, a {
   display: inline-block;
   vertical-align: middle;
+}
+
+/*Smaller Screens*/
+
+@media screen and (max-width: 700px) {
+
+  .octocat {
+    width: 91%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+
+  .octocat {
+    width: 45%;
+    margin: 2%;
+  }
+
+  .image-footer::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid #CACACA;
+      position: relative;
+      top: 3px;
+      left: 81%;
+  }
+
+}
+
+@media screen and (min-width: 901px) and (max-width: 1149px) {
+
+  .octocat {
+    width: 45%;
+    margin: 2%;
+  }
+
+  .image-footer::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid #CACACA;
+      position: relative;
+      top: 3px;
+      left: 86%;
+  }
+
+}
+
+
+@media screen and (min-width: 1150px) and (max-width: 1360px) {
+
+  .octocat{
+    width: 30%;
+    margin: 1.5%;
+  }
+
+  .image-footer::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid #CACACA;
+      position: relative;
+      top: 3px;
+      left: 83%;
+  }
+
+
 }
