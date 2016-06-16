@@ -1,5 +1,6 @@
 .octocat {
   width: 31%;
+  max-width: 450px;
   float: left;
   margin: 15px;
 }
@@ -33,15 +34,16 @@ li {
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 8px solid #CACACA;
-    position: relative;
-    top: 3px;
-    left: 86%;
+    position: absolute;
+    top: -4px;
+    right: 1%;
 }
 
 .image-footer {
   height: 45px;
   padding-bottom: 3px;
   border-bottom: 1px solid #CACACA;
+  position: relative;
 }
 
 .image-number::before {
@@ -119,19 +121,6 @@ span {
     width: 45%;
     margin: 2%;
   }
-
-  .image-footer::before {
-      content: "";
-      width: 0;
-      height: 0;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-top: 8px solid #CACACA;
-      position: relative;
-      top: 3px;
-      left: 81%;
-  }
-
 }
 
 @media screen and (min-width: 901px) and (max-width: 1149px) {
@@ -140,19 +129,6 @@ span {
     width: 45%;
     margin: 2%;
   }
-
-  .image-footer::before {
-      content: "";
-      width: 0;
-      height: 0;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-top: 8px solid #CACACA;
-      position: relative;
-      top: 3px;
-      left: 86%;
-  }
-
 }
 
 
@@ -162,18 +138,4 @@ span {
     width: 30%;
     margin: 1.5%;
   }
-
-  .image-footer::before {
-      content: "";
-      width: 0;
-      height: 0;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-top: 8px solid #CACACA;
-      position: relative;
-      top: 3px;
-      left: 83%;
-  }
-
-
 }
